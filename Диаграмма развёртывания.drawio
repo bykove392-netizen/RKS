@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram name="Страница-1" id="oUbgVNGpculOtVsHHGtY">
+    <mxGraphModel dx="1128" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node_client" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;paddingTop=20;" value="&lt;b&gt;Клиентское устройство&lt;/b&gt;&lt;div&gt;&lt;b&gt;(ПК, Ноутбук, Телефон, Планшет.)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="220" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_guest" parent="node_client" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Гость&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_buyer" parent="node_client" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Покупатель&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="node_server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;paddingTop=20;" value="&lt;b&gt;Сервер API (Backend)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="260" width="220" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_system" parent="node_server" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Система&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_aggregator" parent="node_server" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Агрегатор цен API&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="node_admin" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;paddingTop=20;" value="&lt;b&gt;ПК Администратора&lt;/b&gt;" vertex="1">
+          <mxGeometry height="260" width="220" x="760" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_admin" parent="node_admin" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&amp;lt;&amp;lt;component&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Администратор&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="link_client_server" edge="1" parent="1" source="node_client" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;endFill=1;" target="node_server" value="HTTP/REST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_admin_server" edge="1" parent="1" source="node_admin" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;endFill=1;" target="node_server" value="HTTPS/REST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lHkDYkS-Pegd2Kb2CocB" name="Страница-2">
+    <mxGraphModel dx="1128" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor_buyer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Покупатель" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="obj_ui_buyer" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Интерфейс Покупателя&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="obj_ui_admin" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Панель Админа&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="200" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="obj_sys" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Система (Backend)&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="500" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="obj_api" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:Внешние API&lt;/u&gt;&lt;br&gt;(Ozon, Wildberries,&lt;br&gt;Яндекс.Маркет и др.)" vertex="1">
+          <mxGeometry height="60" width="160" x="760" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obj_db" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;u&gt;:База Данных&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="780" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="link_buyer_ui" edge="1" parent="1" source="actor_buyer" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=bottom;spacingTop=-5;" target="obj_ui_buyer" value="1. вводТовара() &amp;#8594;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_ui_sys" edge="1" parent="1" source="obj_ui_buyer" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=bottom;spacingTop=-5;" target="obj_sys" value="2. запросАктуальныхЦен() &amp;#8594;&lt;br&gt;&amp;#8592; 6. показСравненияЦен()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_admin_ui" edge="1" parent="1" source="actor_admin" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=bottom;spacingTop=-5;" target="obj_ui_admin" value="A1. добавлениеИсточниковДанныхAPI() &amp;#8594;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_uiadmin_sys" edge="1" parent="1" source="obj_ui_admin" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=bottom;spacingTop=-5;" target="obj_sys" value="A2. обновитьНастройкиAPI() &amp;#8594;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_sys_api" edge="1" parent="1" source="obj_sys" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=bottom;spacingTop=-5;" target="obj_api" value="3. сборДанных() &amp;#8594;&lt;br&gt;&amp;#8592; 4. цены()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_sys_db" edge="1" parent="1" source="obj_sys" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;verticalAlign=top;labelPosition=center;verticalLabelPosition=top;spacingTop=5;" target="obj_db" value="5. логированиеЗапроса() &amp;#8594;&lt;br&gt;A3. сохранитьВБД() &amp;#8594;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="_d0CvM3yIrNh_qJE2gC5" name="Страница-3">
+    <mxGraphModel dx="1128" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

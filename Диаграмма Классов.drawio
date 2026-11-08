@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Страница-1" id="uuNWoSsH_9rJE9I1DQRa">
+    <mxGraphModel dx="1128" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nhide circle\nskinparam classAttributeIconSize 0\n\nclass Система {\n  Роль\n  Пароль\n  Логин\n  Регистрация\n  Авторизация\n}\n\nclass Гость {\n  регистрация(): void\n}\n\nclass Покупатель {\n  вводТовара(): void\n  просмотрСпискаМагазинов(): void\n  выборМагазинов(): void\n  фильтрация(): void\n  сравнениеЦенВМагазинах(): void\n  просмотрАктуальныхЦен(): void\n}\n\nclass Администратор {\n  добавлениеПользователя(): void\n  выборПользователя(): void\n  редактированиеПользователя(): void\n  удалениеПользователя(): void\n  просмотрСпискаПользователей(): void\n  добавлениеИсточниковДанныхAPI(): void\n  выборИсточниковДанныхAPI(): void\n  редактированиеИсточниковДанныхAPI(): void\n  удалениеИсточниковДанныхAPI(): void\n  просмотрИсточниковДанныхAPI(): void\n  просмотрСистемныхЛогов(): void\n  мониторингСинхронизацииЦен(): void\n}\n\nСистема &lt;|-- Гость\nСистема &lt;|-- Покупатель\nСистема &lt;|-- Администратор\n\n@enduml\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="xeQPRqBU_DTz3xmGL7IK-121">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Система" plantUmlId="cls_2" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" plantUmlBaseValue="Система" id="xeQPRqBU_DTz3xmGL7IK-122">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-121" style="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" vertex="1">
+            <mxGeometry height="134.5" width="118.7" x="321.3" y="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="- Роль" plantUmlId="mb_3" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="Роль" id="xeQPRqBU_DTz3xmGL7IK-123">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="118.7" y="31.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="- Пароль" plantUmlId="mb_4" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="Пароль" id="xeQPRqBU_DTz3xmGL7IK-124">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="118.7" y="50.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="- Логин" plantUmlId="mb_5" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="Логин" id="xeQPRqBU_DTz3xmGL7IK-125">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="118.7" y="69.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ Регистрация" plantUmlId="mb_6" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="Регистрация" id="xeQPRqBU_DTz3xmGL7IK-126">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="118.7" y="88.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ Авторизация" plantUmlId="mb_7" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="Авторизация" id="xeQPRqBU_DTz3xmGL7IK-127">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="118.7" y="107.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_8" plantUmlBaseStyle="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-128">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-122" style="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" vertex="1">
+            <mxGeometry height="8" width="118.7" y="126.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Гость" plantUmlId="cls_9" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" plantUmlBaseValue="Гость" id="xeQPRqBU_DTz3xmGL7IK-129">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-121" style="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" vertex="1">
+            <mxGeometry height="58.5" width="160" x="70" y="250.72000000000003" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_10" plantUmlBaseStyle="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-130">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-129" style="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" vertex="1">
+            <mxGeometry height="8" width="160" y="31.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ регистрация(): void" plantUmlId="mb_11" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="регистрация(): void" id="xeQPRqBU_DTz3xmGL7IK-131">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-129" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="160" y="39.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Покупатель" plantUmlId="cls_12" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" plantUmlBaseValue="Покупатель" id="xeQPRqBU_DTz3xmGL7IK-132">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-121" style="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" vertex="1">
+            <mxGeometry height="153.5" width="259.43" x="250.57" y="250.72000000000003" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_13" plantUmlBaseStyle="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-133">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" vertex="1">
+            <mxGeometry height="8" width="259.43" y="31.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ вводТовара(): void" plantUmlId="mb_14" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="вводТовара(): void" id="xeQPRqBU_DTz3xmGL7IK-134">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="39.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ просмотрСпискаМагазинов(): void" plantUmlId="mb_15" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="просмотрСпискаМагазинов(): void" id="xeQPRqBU_DTz3xmGL7IK-135">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="58.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ выборМагазинов(): void" plantUmlId="mb_16" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="выборМагазинов(): void" id="xeQPRqBU_DTz3xmGL7IK-136">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="77.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ фильтрация(): void" plantUmlId="mb_17" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="фильтрация(): void" id="xeQPRqBU_DTz3xmGL7IK-137">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="96.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ сравнениеЦенВМагазинах(): void" plantUmlId="mb_18" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="сравнениеЦенВМагазинах(): void" id="xeQPRqBU_DTz3xmGL7IK-138">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="115.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ просмотрАктуальныхЦен(): void" plantUmlId="mb_19" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="просмотрАктуальныхЦен(): void" id="xeQPRqBU_DTz3xmGL7IK-139">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-132" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="259.43" y="134.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Администратор" plantUmlId="cls_20" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" plantUmlBaseValue="Администратор" id="xeQPRqBU_DTz3xmGL7IK-140">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-121" style="swimlane;collapsible=0;fontStyle=0;align=center;fontSize=14;fontColor=#000000;startSize=26;spacingLeft=0;fillColor=#F1F1F1;strokeColor=#181818;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=5.5;" vertex="1">
+            <mxGeometry height="267.5" width="317.1" x="525.94" y="250.72000000000003" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_21" plantUmlBaseStyle="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-141">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="line;strokeWidth=0.5;strokeColor=#181818;fillColor=none;align=left;verticalAlign=middle;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;connectable=0;" vertex="1">
+            <mxGeometry height="8" width="317.1" y="31.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ добавлениеПользователя(): void" plantUmlId="mb_22" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="добавлениеПользователя(): void" id="xeQPRqBU_DTz3xmGL7IK-142">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="39.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ выборПользователя(): void" plantUmlId="mb_23" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="выборПользователя(): void" id="xeQPRqBU_DTz3xmGL7IK-143">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="58.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ редактированиеПользователя(): void" plantUmlId="mb_24" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="редактированиеПользователя(): void" id="xeQPRqBU_DTz3xmGL7IK-144">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="77.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ удалениеПользователя(): void" plantUmlId="mb_25" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="удалениеПользователя(): void" id="xeQPRqBU_DTz3xmGL7IK-145">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="96.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ просмотрСпискаПользователей(): void" plantUmlId="mb_26" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="просмотрСпискаПользователей(): void" id="xeQPRqBU_DTz3xmGL7IK-146">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="115.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ добавлениеИсточниковДанныхAPI(): void" plantUmlId="mb_27" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="добавлениеИсточниковДанныхAPI(): void" id="xeQPRqBU_DTz3xmGL7IK-147">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="134.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ выборИсточниковДанныхAPI(): void" plantUmlId="mb_28" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="выборИсточниковДанныхAPI(): void" id="xeQPRqBU_DTz3xmGL7IK-148">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="153.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ редактированиеИсточниковДанныхAPI(): void" plantUmlId="mb_29" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="редактированиеИсточниковДанныхAPI(): void" id="xeQPRqBU_DTz3xmGL7IK-149">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="172.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ удалениеИсточниковДанныхAPI(): void" plantUmlId="mb_30" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="удалениеИсточниковДанныхAPI(): void" id="xeQPRqBU_DTz3xmGL7IK-150">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="191.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ просмотрИсточниковДанныхAPI(): void" plantUmlId="mb_31" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="просмотрИсточниковДанныхAPI(): void" id="xeQPRqBU_DTz3xmGL7IK-151">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="210.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ просмотрСистемныхЛогов(): void" plantUmlId="mb_32" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="просмотрСистемныхЛогов(): void" id="xeQPRqBU_DTz3xmGL7IK-152">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="229.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="+ мониторингСинхронизацииЦен(): void" plantUmlId="mb_33" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" plantUmlBaseValue="мониторингСинхронизацииЦен(): void" id="xeQPRqBU_DTz3xmGL7IK-153">
+          <mxCell parent="xeQPRqBU_DTz3xmGL7IK-140" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fillColor=none;strokeColor=none;fontSize=14;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="19" width="317.1" y="248.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_34" plantUmlBaseStyle="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-154">
+          <mxCell edge="1" parent="xeQPRqBU_DTz3xmGL7IK-121" source="xeQPRqBU_DTz3xmGL7IK-129" style="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="xeQPRqBU_DTz3xmGL7IK-122">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="142.79000000000002" y="250.72000000000003" as="sourcePoint" />
+              <mxPoint x="346.03" y="157" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_35" plantUmlBaseStyle="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-155">
+          <mxCell edge="1" parent="xeQPRqBU_DTz3xmGL7IK-121" source="xeQPRqBU_DTz3xmGL7IK-132" style="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="xeQPRqBU_DTz3xmGL7IK-122">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="370.76" y="250.72000000000003" as="sourcePoint" />
+              <mxPoint x="370.76" y="157" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_36" plantUmlBaseStyle="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="xeQPRqBU_DTz3xmGL7IK-156">
+          <mxCell edge="1" parent="xeQPRqBU_DTz3xmGL7IK-121" source="xeQPRqBU_DTz3xmGL7IK-140" style="endArrow=block;endFill=0;endSize=12;html=1;strokeColor=#181818;fontColor=#000000;fontSize=11;curved=0;rounded=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="xeQPRqBU_DTz3xmGL7IK-122">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="684.49" y="250.72000000000003" as="sourcePoint" />
+              <mxPoint x="395.48" y="157" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="zwQrwJIoyecGR5flWuNy" name="Страница-2">
+    <mxGraphModel dx="1128" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
